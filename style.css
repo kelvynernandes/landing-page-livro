@@ -7,8 +7,8 @@
 
 /* CORES */
 :root{
-    --cor-fundo: #F5D04E;
-    --cor-botao: #F8DF63;
+    --cor-fundo: #F4CF4F;
+    --cor-menu: #F7DE67;
     --cor-hover: #FFC400;
     --cor-texto-menu: #F05A00;
     --cor-vermelha: #D62828;
@@ -22,42 +22,47 @@ body{
 
 /* HEADER */
 header{
-    width: 100%;
-    background-color: #F2CC4D;
-    border-bottom: 1px solid #000;
+    background-color: #F0CC4D;
+
+    border-bottom: 1px solid black;
 }
 
 /* NAV */
 nav{
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
+
+    align-items: center;
 
     padding: 20px 50px;
 }
 
 /* LOGO */
-.logo{
-    width: 70px;
+nav img{
+    width: 45px;
+
+    height: auto;
 }
 
 /* MENU */
 nav ul{
     display: flex;
+
     gap: 40px;
 
     list-style: none;
 }
 
-/* BOTÕES MENU */
+/* LINKS MENU */
 nav ul li a{
     text-decoration: none;
 
-    background-color: var(--cor-botao);
+    background-color: var(--cor-menu);
 
     color: var(--cor-texto-menu);
 
-    padding: 18px 70px;
+    padding: 18px 60px;
 
     border-radius: 4px;
 
@@ -73,44 +78,56 @@ nav ul li a:hover{
     transform: scale(1.05);
 }
 
-/* CONTEÚDO PRINCIPAL */
+/* MAIN */
 main{
+    padding: 70px;
+}
+
+/* SECTION LIVRO */
+.livro{
     display: flex;
 
     justify-content: space-around;
 
     align-items: center;
-
-    padding: 80px;
 }
 
-/* ÁREA LIVRO */
-.livro{
+/* CAPA */
+.capa{
     text-align: center;
 }
 
 /* IMAGEM LIVRO */
-.livro img{
+.capa img{
     width: 320px;
+
+    border-radius: 5px;
 }
 
-/* AUTOR */
-.autor{
+/* TEXTO AUTOR */
+.capa p{
+    margin-top: 20px;
+
+    font-size: 35px;
+
+    color: black;
+}
+
+/* LINK AUTOR */
+.capa p a{
+    text-decoration: none;
+
     color: var(--cor-vermelha);
-
-    font-size: 50px;
-
-    margin-top: 15px;
 }
 
-/* TEXTO DIREITA */
-.info{
+/* INFORMAÇÕES */
+.informacoes{
     text-align: center;
 }
 
 /* TÍTULO */
-.info h1{
-    font-size: 70px;
+.informacoes h1{
+    font-size: 65px;
 
     font-weight: normal;
 
@@ -118,7 +135,7 @@ main{
 }
 
 /* SUBTÍTULO */
-.info h2{
+.informacoes h2{
     font-size: 45px;
 
     font-weight: normal;
@@ -126,52 +143,41 @@ main{
     margin-bottom: 70px;
 }
 
-/* TEXTO */
-.info p{
-    font-size: 45px;
+/* TEXO */
+.informacoes p{
+    font-size: 40px;
 
-    line-height: 60px;
+    line-height: 55px;
 
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
-/* BOTÃO COMPRAR */
-.btn-compra{
-    width: 200px;
-    height: 200px;
+/* BOTÃO */
+.botao{
+    display: inline-block;
+
+    text-decoration: none;
 
     background-color: #FFE100;
 
+    color: black;
+
+    width: 220px;
+
+    height: 220px;
+
     border-radius: 50%;
 
-    display: flex;
+    font-size: 28px;
 
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    margin: auto;
-
-    cursor: pointer;
+    padding-top: 75px;
 
     transition: 0.3s;
 }
 
 /* HOVER BOTÃO */
-.btn-compra:hover{
+.botao:hover{
     transform: scale(1.08);
-}
 
-/* TEXTO BOTÃO */
-.btn-compra span{
-    font-size: 30px;
-
-    margin-bottom: 10px;
-}
-
-/* ÍCONE */
-.btn-compra i{
-    font-size: 70px;
-}
+    background-color: #FFD000;
+} 
